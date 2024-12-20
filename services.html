@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Услуги</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<header class="bg-light">
+    <div class="py-3 border-bottom">
+        <div class="px-5 row align-items-center">
+            <a href="/" class="col-2 d-flex flex-column align-items-center me-auto text-dark text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi me-2 bi-backpack" viewBox="0 0 16 16">
+                    <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+                    <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/>
+                </svg>
+                <span class="fs-5">Logo</span>
+            </a>
+            <article class="col col-sm-3">
+                <h5>Збиняков Никита Сергеевич</h5>
+                <span>Группа: ЭФБО-03-23</span>
+            </article>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg border-bottom py-2">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNavbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fs-5" id="headerNavbarContent">
+                <ul class="navbar-nav nav-underline me-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2" aria-current="page">Главная</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-2" data-bs-toggle="dropdown" aria-expanded="false">
+                            Семестр
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="first_term.html">Первый</a></li>
+                            <li><a class="dropdown-item" href="#">Второй</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="services.html" class="nav-link link-dark px-2">Услуги</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Авторизация</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="modal fade" id="example1Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Статус</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex align-items-center flex-column">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <h3 class="mt-4">Успешно!</h3>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Разработка веб-сайта</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Алексей">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Ваш e-mail</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="example@gmail.com">
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 col-sm-4">
+                            <label for="telInput" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="telInput"
+                                   pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8(___)___-__-__">
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <label class="form-label">Страна</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected value="russia">Россия</option>
+                                <option value="uganda">Уганда</option>
+                                <option value="monaco">Монако</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <label for="dateInput" class="form-label">Дата</label>
+                            <input type="date" class="form-control" id="dateInput">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="commInput" class="form-label">Комментарий</label>
+                        <textarea class="form-control" id="commInput"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="checkInput">
+                        <label class="form-check-label" for="checkInput">Согласен на обработку моих персональных данных</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<main class="row p-0 px-sm-3">
+    <nav class="d-none d-sm-block col-2 pt-3 px-2 border-end">
+        <h3>Навигация по странице</h3>
+        <ul class="nav flex-column fs-5">
+            <li class="nav-item"><a href="#code" class="nav-link link-dark px-2">Разработка веб-приложений</a></li>
+        </ul>
+    </nav>
+    <div class="col py-3 px-5">
+        <h2>Разработка веб-приложений!</h2>
+        <div class="row gap-5 my-3">
+            <div class="card col-12 col-sm p-0">
+                <img src="source/stickerservice.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Сайт-визитка</h5>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Заказать
+                    </button>
+                </div>
+            </div>
+            <div class="card col-12 col-sm p-0">
+                <img src="source/stickerservice2.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Корпоративный сайт</h5>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Заказать
+                    </button>
+                </div>
+            </div>
+            <div class="card col-12 col-sm p-0">
+                <img src="source/stickerservice3.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Интернет магазин</h5>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Заказать
+                    </button>
+                </div>
+            </div>
+        </div>
+        <p>
+            Алло, да? Уже когда оно, ой... Помнишь, когда оно тебе всегда я? Ага. В общем, когда всегда это 
+            доготовился, я изобрел сыворотку, по которой все "всегда тогда" понимают, когда я говорю всегда тогда.
+            Уже да, ага. ОНО ВОТ ТАК ВОТ И БЫВАЕТ, ЗНАЕШЬ? А ВСЕ ПРОБЛЕМЫ - ОНИ ОТЧЕГО? ОНИ ОТТОГО? ЧТО ТЫ НЕ ЖИВЕШЬ.
+            ПОТОМУ ЧТО ЖИТЬ НАДО? АЛЁ. ТЫ ВОТ СЕГОДНЯ ОНО ТУДА, ЗАВТРА ВСЕГДА ТОГДА? УЖЕ И НЕ ТУДА. А Я ТЕБЕ ГОВОРЮ:
+            ТЫ ОДИН РАЗ ТОГДА, А ПОТОМ УЖЕ ВСЕГДА, А ГДЕ ВСЕГДА? ТАМ И ТОГДА. Все, давай, ага, да, да, давай, добро
+            добро, добро, ага, добро, добро, добро, добро, все...
+        </p>
+    </div>
+</main>
+<footer class="row justify-content-between py-3 px-5 border-top">
+    <div class="col col-sm-4 d-flex align-items-center">
+        <a href="/" class="d-none d-sm-block mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi me-2 bi-backpack" viewBox="0 0 16 16">
+                <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+                <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/>
+            </svg>
+        </a>
+        <span class="text-muted">© Збиняков Никита Сергеевич, 2024</span>
+    </div>
+
+    <ul class="nav col-3 col-sm-4 justify-content-end list-unstyled d-flex">
+        <li class=""><a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+        </svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+        </svg></a></li>
+    </ul>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="services.js"></script>
+</body>
+</html>
